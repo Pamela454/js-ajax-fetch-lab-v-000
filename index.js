@@ -45,8 +45,8 @@ function createIssue() {
 
 function getIssues() {
   //once an issue is submitted, fetch all open issues to see the issues you are creating
-  const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
-
+  const repo = '/js-ajax-fetch-lab';
+/js-ajax-fetch-lab.*\/issues/
   fetch(`${repo}/issues`)
   .then(response => response.json())
   .then(json => console.log(json));
