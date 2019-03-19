@@ -30,6 +30,7 @@ function createIssue() {
   const issue = { 
     body: 'test body'
   };
+  
   fetch(`${repo}/issues`, 
   {
     method: 'POST',
