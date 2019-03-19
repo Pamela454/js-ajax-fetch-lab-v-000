@@ -48,7 +48,7 @@ function getIssues() {
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
   const issuePage = ''
   
-  fetch('json.html_url')
+  fetch(`${repo}/issues`); 
   .then(response => response.json())
   .then(json => console.log(json));
   
