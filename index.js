@@ -27,7 +27,7 @@ function showResults(json) {
 function createIssue() {
   //use this function to create an issue based on the values input in index.html
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
-  fetch(`${baseURL}/repos/${repo}/forks`, {
+  fetch(`${baseURL}/repos/${repo}/issues`, {
     method: 'POST',
   
   
