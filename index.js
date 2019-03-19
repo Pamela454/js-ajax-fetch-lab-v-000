@@ -32,9 +32,9 @@ function createIssue() {
     method: 'POST',
   body: JSON.stringify(issue)
   headers: {
-    Authorization: `headers ${testBody}`
-   }
-  })
+      Authorization: `token ${token}`
+    }
+  }
   .then(res => console.log(res));
 }
 
