@@ -29,8 +29,11 @@ function createIssue() {
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
   fetch(`${baseURL}/repos/${repo}/issues`, {
     method: 'POST',
-  
-  
+  headers: {
+    Authorization: `token ${getToken}`
+   }
+  })
+  .then(res => console.log(res));
 }
 
 function getIssues() {
