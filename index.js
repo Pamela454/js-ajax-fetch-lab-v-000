@@ -27,7 +27,7 @@ function showResults(json) {
 function createIssue() {
   //use this function to create an issue based on the values input in index.html
   const repo = '/js-ajax-fetch-lab';
-  const Body = 'test body';
+  const body = 'test body';
   fetch(`${repo}/issues`, {
     method: 'POST',
   headers: {
