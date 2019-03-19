@@ -19,10 +19,18 @@ function forkRepo() {
 
 function showResults(json) {
   //use this function to display the results from forking via the API
+  fetch('json.html_url')
+  .then(response => response.json())
+  .then(json => console.log(json));
 }
 
 function createIssue() {
   //use this function to create an issue based on the values input in index.html
+  const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
+  fetch(`${baseURL}/repos/${repo}/forks`, {
+    method: 'POST',
+  
+  
 }
 
 function getIssues() {
