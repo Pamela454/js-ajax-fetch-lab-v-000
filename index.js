@@ -28,7 +28,7 @@ function createIssue() {
   //use this function to create an issue based on the values input in index.html
   const repo = '/js-ajax-fetch-lab';
   const issue = { 
-    body: 'test body'
+    body: 'no data available for html form'
   };
   
   fetch(`${repo}/issues`, 
