@@ -34,7 +34,7 @@ function createIssue() {
   fetch(`${repo}/issues`, 
   {
     method: 'POST',
-  body: JSON.stringify(issue)
+    body: JSON.stringify(issue)
   
   headers: {
     Authorization: `token ${getToken}`
