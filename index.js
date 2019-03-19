@@ -36,6 +36,8 @@ function createIssue() {
   .then(res => console.log(res));
 }
 
+/js-ajax-fetch-lab.*\/issues/
+
 function getIssues() {
   //once an issue is submitted, fetch all open issues to see the issues you are creating
 }
