@@ -45,6 +45,8 @@ function createIssue() {
 
 function getIssues() {
   //once an issue is submitted, fetch all open issues to see the issues you are creating
-  
+  fetch('json.html_url')
+  .then(response => response.json())
+  .then(json => console.log(json));
   
 }
