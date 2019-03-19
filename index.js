@@ -30,7 +30,7 @@ function createIssue() {
   fetch(`${repo}/issues`, {
     method: 'POST',
   headers: {
-    Authorization: `token ${getToken}`
+    Authorization: `header ${getToken}`
    }
   })
   .then(res => console.log(res));
