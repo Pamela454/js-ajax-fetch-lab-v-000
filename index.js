@@ -39,7 +39,7 @@ function createIssue() {
       Authorization: `token ${getToken}`
     }
   }
-  .then(res => console.log(res));
+  ).then(res => console.log(res));
 }
 
 function getIssues() {
