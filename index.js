@@ -30,7 +30,7 @@ function createIssue() {
   const issue = { body: 'test body'};
   fetch(`${repo}/issues`, {
     method: 'POST',
-  body: 
+  body: JSON.stringify(issue)
   headers: {
     Authorization: `headers ${testBody}`
    }
