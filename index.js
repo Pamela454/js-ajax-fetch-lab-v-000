@@ -37,10 +37,10 @@ function createIssue() {
   body: JSON.stringify(issue)
   
   headers: {
-      Authorization: `token ${getToken}`
-    }
-  }
-  ).then(res => console.log(res));
+    Authorization: `token ${getToken}`
+   }
+  })
+  .then(res => console.log(res));
 }
 
 function getIssues() {
